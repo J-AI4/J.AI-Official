@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: #0b0c1c;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #ccc;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px #a0a0ff, 0 0 20px #b0b0ff;
+    transition: 0.3s;
+}
+
+.title:hover {
+    text-shadow: 0 0 20px #d0d0ff, 0 0 40px #e0e0ff, 0 0 60px #c0c0ff;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
