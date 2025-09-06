@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
 
-body {
+body, html {
     margin: 0;
     padding: 0;
     overflow: hidden;
     height: 100%;
     width: 100%;
     background: #0b0c1c;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Combo', sans-serif;
     color: white;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    color: #ccc;
+    color: #f9efff;
 }
 
 .title {
