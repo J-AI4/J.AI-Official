@@ -29,15 +29,17 @@ body, html {
     text-align: center;
     text-shadow: 0 0 10px #a0a0ff, 0 0 20px #b0b0ff;
     transition: 0.3s;
+    z-index: 1;
 }
 
 .title:hover {
     text-shadow: 0 0 20px #d0d0ff, 0 0 40px #e0e0ff, 0 0 60px #c0c0ff;
+    cursor: default;
 }
 
 canvas {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
 }
