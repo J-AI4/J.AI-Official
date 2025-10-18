@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Combo', sans-serif;
+    background: #0b0c1c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+canvas #cosmicCanvas {
+    position; fixed
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.title-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 85%;
+    max-width: 900px;
+    background: rgba(0,0,0,0.85);
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: 0 0 25px #b084ff;
+}
+
+.header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #f9efff;
+    text-shadow: 0 0 15px #a0a0ff, 0 0 25px #b0b0ff;
+}
+
+.room {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.glow-word {
+    display: inline-block;
+    transition: text-shadow 0.3s;
+}
+
+glow-word:hover {
+    text-shadow: 0 0 10px #c9b8ff, 0 0 20px #e3dbff;
+}
+
