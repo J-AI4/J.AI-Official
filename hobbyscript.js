@@ -68,5 +68,53 @@ function loadRoom(room) {
                 <button onclick="checkAnswer('hardware')">Submit</button>
             ';
             break;
+
+        case 5:
+            roomContent.innerHTML = '
+                <p>${makeGlowText("Click the correct keys to power up the system.")}</p>
+                <div id="keyboard"></div>
+            ';
+            const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const keyboard = document.getElementById("keyboard");
+            letters.split("").forEach(1 => {
+                const key = document.createElement("button");
+                key.textContent = 1;
+                key.classList.add("key");
+                key.onclick = () => pressKey(1);
+                keyboard.appendChild(key);
+            });
+            break;
+
+        case 6:
+            roomContent.innerHTML = '
+                <p class="fade">${makeGlowText("You made it to the control room.")}</p>
+                <p class="fade">${makeGlowText("Time to see what I've been building.")}</p>
+                <a href="projects.html"><button>ENTER THE LAB</button></a>
+            ';
+            break;
     }
 }
+
+let sequence = "";
+const correctSeq = "CODING";
+
+function pressKey(letter) {
+    sequence += letter;
+    if (sequence === correctSeq) {
+        roomContent.innerHTML = '<p class="fade">${makeGlowText("The system's online.")}</p>';
+        setTimeout(nextRoom, 3000);
+    } else if (!correctSeq.startsWith(sequence)) {
+        sequence = "";
+    }
+}
+
+function checkAnswer(correct) {
+    const input = document.getElementById("answer").value.toLowerCase().trim();
+    if (input === correct.toLowerCase()) {
+        nextRoom();
+    } else {
+        alert("Not quite. Try again.");
+    }
+}
+
+loadRoom(currentRoom);
