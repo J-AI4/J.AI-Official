@@ -20,7 +20,7 @@ Future projects page (spoiler above)
 
 Challenges & Lessons Learned
 
-I struggled a bit with CSS and animations using JS... the stars weren’t moving and haze didn’t work exactly like I wanted at first, so there was a lot of debugging. I also kept forgetting colons, semicolons, and spaces in the CSS. Through it all, I learned more about JavaScript, CSS, and making things interactive, and I had fun experimenting with my style.
+I struggled a bit with CSS and animations using JS... the stars weren’t moving and haze didn’t work exactly like I wanted at first, so there was a lot of debugging. I also kept forgetting colons, semicolons, and spaces in the CSS. Also wanted to add that this is the first time I used JS to make something like this (escape room). Through it all, I learned more about JavaScript, CSS, and making things interactive, and I had fun experimenting with my style.
 
 Credits: obviously J-AI (me LOL).
 
